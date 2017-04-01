@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 RUN apk update && apk add --no-cache openssl tar gzip
 RUN apk add --no-cache --virtual=build-dependencies curl
 
-ARG SCALA_VERSION=2.12.1
+ARG SCALA_VERSION=2.11.8
 
 ARG SCALA_URI="https://downloads.lightbend.com/scala/$SCALA_VERSION/scala-$SCALA_VERSION.tgz"
 
